@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+mkdir /usr/share/wordlists
+cd /usr/share/wordlists
+
+echo "passwords: /usr/share/wordlists"
+
 wget http://downloads.skullsecurity.org/passwords/rockyou.txt.bz2 2>/dev/null  && bzip2 -dk rockyou.txt.bz2 2>/dev/null  & \
 wget http://downloads.skullsecurity.org/passwords/phpbb.txt.bz2 2>/dev/null && bzip2 -dk phpbb.txt.bz2 2>/dev/null & \
 wget http://downloads.skullsecurity.org/passwords/myspace.txt.bz2 2>/dev/null && bzip2 -dk myspace.txt.bz2 2>/dev/null & \
